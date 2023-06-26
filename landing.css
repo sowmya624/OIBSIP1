@@ -1,0 +1,45 @@
+body{
+    background-color:#F3E8EA;
+}
+.section1 {
+    display:flex;
+  }
+  .slideshow-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+   
+  }
+  section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1eded;
+  }
+  
+  .slideshow-container{
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .c{
+    background-color: black;
+    color: white;
+    display: flex;
+  }
+  .c1{
+    list-style-type: none;
+    margin-left: 60px;
+  margin-right: 60px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

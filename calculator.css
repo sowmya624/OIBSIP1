@@ -1,0 +1,21 @@
+
+.c {
+    width: 200px;
+    padding: 10px;
+    background-color: #dcd5f3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+  }
+
+  .c input {
+    padding: 15px;
+    width: 100%; 
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+  }
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./calculator.css">
+  <style>
+  </style>
+</head>
+<body>
+    <h1 class="a">Calculator</h1>
+  <div class="c" align="center">
+    <input type="text" id="result">
+    <input type="button" value="C" onclick="clearResult()">
+    <input type="button" value="DE" onclick="deleteCharacter()">
+    <input type="button" value="=" onclick="calculate()">
+    <input type="button" value="1" onclick="appendToResult(1)">
+    <input type="button" value="2" onclick="appendToResult(2)">
+    <input type="button" value="3" onclick="appendToResult(3)"> 
+    <input type="button" value="4" onclick="appendToResult(4)">
+    <input type="button" value="5" onclick="appendToResult(5)">
+    <input type="button" value="6" onclick="appendToResult(6)">
+    <input type="button" value="7" onclick="appendToResult(7)">
+    <input type="button" value="8" onclick="appendToResult(8)">
+    <input type="button" value="9" onclick="appendToResult(9)">
+    <input type="button" value="0" onclick="appendToResult(0)">
+    <input type="button" value="+" onclick="appendToResult('+')">
+    <input type="button" value="-" onclick="appendToResult('-')">
+    <input type="button" value="*" onclick="appendToResult('*')">
+    <input type="button" value="/" onclick="appendToResult('/')">
+  </div>
+
+  <script>
+    const resultField = document.getElementById('result');
+
+    function appendToResult(value) {
+      resultField.value += value;
+    }
+    
+
+    function clearResult() {
+      resultField.value = '';
+    }
+    function deleteCharacter() {
+      resultField.value = resultField.value.slice(0, -1);
+    }
+
+    function calculate() {
+      try {
+        resultField.value = eval(resultField.value);
+      } catch (error) {
+        resultField.value = 'Error';
+      }
+    }
+  </script>
+</body>
+</html>
